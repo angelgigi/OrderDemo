@@ -1,0 +1,54 @@
+*{
+    font: 18px"Microsoft yahei",arial, Simsun, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+li{
+    display: block;
+}
+textarea, input[type="text"]{
+    padding: 0 0 0 3px;
+    border-color: #bbb #ddd #ddd #bbb;
+    border-style: solid;
+    border-width: 1px;
+    height: 28px;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    outline: none;
+    color: #333;
+    box-shadow: 1px 1px 1px #ddd inset;
+    border-radius: 3px;
+    transition: inherit;
+}
+.list{
+    overflow: visible;
+    height: 40px;
+    margin-bottom: 11px;
+}
+.sure{
+    cursor: pointer;
+    background-color: #ff9913;
+    border-radius: 3px;
+    margin-left:20px;
+    text-align: center;
+    color: #fff;
+    height: 38px;
+    line-height: 38px;
+    width: 100px;
+    border: 1px solid #bfd3ed;
+}
+.name{
+    float: left;
+    width: 100px;
+    color: #333;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+
+}
+.inputbox{
+    float: left;
+
+}

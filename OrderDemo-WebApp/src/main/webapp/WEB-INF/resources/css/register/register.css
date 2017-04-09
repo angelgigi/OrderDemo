@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.register-container{
+    height: 800px;
+}
+.form-item{
+    display: block;
+    margin-top: 30px;
+}
+.lab{
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px
+
+}
+.form-item .jd{
+    height: 40px;
+}
+.jd_btn{
+    cursor: pointer;
+    background-color: #ff9913;
+    border-radius: 3px;
+    margin-left:20px;
+    text-align: center;
+    color: #fff;
+    height: 38px;
+    line-height: 38px;
+    width: 100px;
+    border: 1px solid #bfd3ed;
+}
