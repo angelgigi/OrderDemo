@@ -35,12 +35,12 @@ public class UserDaoImp implements UserDao {
 
     public UserEntity GetUserInfo(String username) {
         UserEntity userEntity=new UserEntity();
-        userEntity=session.selectOne("UserDao.GetUserInfo",username);
+        userEntity=session.selectOne("com.test.order.dao.UserDao.GetUserInfo",username);
         return userEntity;
     }
 
     public int register(UserEntity userEntity) {
-        int result= session.insert("UserDao.register",userEntity);
+        int result= session.insert("com.test.order.dao.UserDao.register",userEntity);
         session.commit();
         return result;
     }
@@ -48,24 +48,24 @@ public class UserDaoImp implements UserDao {
     public List<UserEntity> GetUserList()
     {
         List<UserEntity> list=new ArrayList<UserEntity>();
-        list = session.selectList("com.ctrip.order.dao.UserDao.selectUserList");
+        list = session.selectList("com.test.order.dao.UserDao.selectUserList");
         return list;
     }
 
     public UserEntity GetUserInfo(int id) {
         UserEntity userEntity=new UserEntity();
-        userEntity=session.selectOne("com.ctrip.order.dao.UserDao.GetUserInfoidByid",id);
+        userEntity=session.selectOne("com.test.order.dao.UserDao.GetUserInfoidByid",id);
         return userEntity;
     }
 
     public int UpdateUser(UserEntity userEntity) {
-        int result= session.update("com.ctrip.order.dao.UserDao.updateUser",userEntity);
+        int result= session.update("com.test.order.dao.UserDao.updateUser",userEntity);
         session.commit();
         return result;
     }
 
     public int deleteUser(int id) {
-        int result= session.update("com.ctrip.order.dao.UserDao.deleteUser",id);
+        int result= session.update("com.test.order.dao.UserDao.deleteUser",id);
         session.commit();
         return result;
     }
